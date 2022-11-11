@@ -1,3 +1,3 @@
-# TeachArtisans_Frontend
+# TechArtisans_Frontend
 
 ## React-HTML-CSS-Bootstrap
