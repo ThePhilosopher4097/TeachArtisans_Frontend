@@ -1,5 +1,6 @@
 import React from 'react'
 import './Landing.css'
+import landing from'../../assets/Landing Page BG 1.png'
 
 const Landing = () => {
   return (
@@ -7,11 +8,11 @@ const Landing = () => {
       <div className="justify-right mx-5">
       <header className='text-right my-5'>
         <nav className='text-right'>
-          <a href="" className='text-right my-5 p-5 text-2xl mx-7'>
+          <a href="/login" className='text-right my-5 p-5 text-2xl mx-7'>
             Login
           </a>
           <button className='bg-button-orange text-[#FFFFFF] rounded-full px-7 py-3 text-2xl '>
-          <a href="" className=''>
+          <a href="/register" className=''>
             Sign Up
           </a>
           </button>
@@ -20,7 +21,7 @@ const Landing = () => {
       </header>
       </div>
       <div className='flex'>
-      <div className='mx-[200px] text-5xl my-[100px] font-bold w-1/2'>
+      <div className='mx-[200px] text-5xl my-[100px] font-bold w-1/2 text-left'>
         <span className='text-blue'> Find </span>
         <br />
         <br />
@@ -38,9 +39,11 @@ const Landing = () => {
         <br />
       </div>
       <div className='image'>
-        <img src='https://r7q6w9z6.rocketcdn.me/career/wp-content/uploads/2021/07/1600356731_career-counselling.jpg'>
+        {/* <img src='https://r7q6w9z6.rocketcdn.me/career/wp-content/uploads/2021/07/1600356731_career-counselling.jpg'>
 
-        </img>
+        </img> */}
+        <img src={landing}></img>
+
     
         
       
