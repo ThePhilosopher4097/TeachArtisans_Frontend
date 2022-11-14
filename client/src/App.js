@@ -4,6 +4,8 @@ import Landing from './pages/Landing/Landing';
 import Login from './pages/Authentication/Login/Login';
 import { Routes, Route } from "react-router-dom";
 import Register from './pages/Authentication/Register/Register';
+// import Header from './components/Header';
+import Explore from './pages/User/Explore';
 
 function App() {
   return (
@@ -12,6 +14,9 @@ function App() {
         <Route path="/" element = {<Landing />} />
         <Route path="/login" element = {<Login />} />
         <Route path="/register" element = {<Register />} />
+        <Route path="/explore" element = {<Explore />} />
+
+
       </Routes>
     </div>
 
