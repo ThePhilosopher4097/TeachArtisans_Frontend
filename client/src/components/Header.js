@@ -11,7 +11,7 @@ const Header = () => {
         </div>
         <div className='m-8 flex'>
         <button className='bg-button-orange text-[#FFFFFF] rounded-lg px-7 py-3 text-2xl m-2' style={{height: 65}}>
-          <a href="/header" className=''>
+          <a href="/roadmap" className=''>
             My Roadmap
           </a>
         </button>
