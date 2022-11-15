@@ -7,6 +7,7 @@ import Register from './pages/Authentication/Register/Register';
 // import Header from './components/Header';
 import Explore from './pages/User/Explore';
 import Roadmap from './pages/User/Roadmap';
+import Profile from './pages/User/Profile';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/register" element = {<Register />} />
         <Route path="/explore" element = {<Explore />} />
         <Route path="/roadmap" element = {<Roadmap />} />
+        <Route path="/profile" element = {<Profile />} />
 
 
       </Routes>

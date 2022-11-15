@@ -38,7 +38,7 @@ const Roadmap = () => {
         </div>
         <div class="h-[1100px] border-l-2 p-0.5 bg-[#565555] rounded-full"></div>
         <div className='w-2/3'>
-            <img src={roadmap} alt="tu alt"className='w-full' />
+            <img src={roadmap} alt="tu alt" className='w-full' />
 
         </div>
     </div>
