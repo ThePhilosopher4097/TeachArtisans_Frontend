@@ -1,6 +1,10 @@
 import React from 'react'
 import './QRight.css'
 import Question from './Question'
+import Question2 from './Question2'
+import Question3 from './Question3'
+import Question4 from './Question4'
+import Start from './Start'
 
 const QRight = () => {
   return (
@@ -10,7 +14,7 @@ const QRight = () => {
         <p className='text-orange text-3xl'>About Yourself</p>
         </div>
         <div className='my-10'>
-            <Question />
+            <Question4 />
         </div>
 
     </div>
