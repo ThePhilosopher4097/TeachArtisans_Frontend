@@ -1,13 +1,11 @@
 import React from 'react'
-import Header from '../../components/Header.js'
-import profile from '../../assets/Profile.png'
+import profile from '../assets/Profile.png'
 
 
-const Profile = () => {
+const QLeft = () => {
   return (
     <>
-    <Header />
-    <div className='flex'>
+
         <div className='w-1/3 m-5 my-14'>
             <h1 className='text-5xl text-center font-bold'>
                 Know thyself
@@ -19,10 +17,10 @@ const Profile = () => {
             </p>
             <img src={profile} alt="tu alt" className='my-12 m-5' style={{height: "60%", width: "100%"}}/>
         </div>
-    </div>
+    
       
     </>
   )
 }
 
-export default Profile
+export default QLeft

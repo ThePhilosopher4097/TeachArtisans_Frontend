@@ -10,17 +10,17 @@ const Header = () => {
             <img src={company} height = '150%' style={{width: 225}}/>   
         </div>
         <div className='m-8 flex'>
-        <button className='bg-button-orange text-[#FFFFFF] rounded-lg px-7 py-3 text-2xl m-2' style={{height: 65}}>
+        <button className='bg-button-blue text-[#FFFFFF] rounded-lg px-7 py-3 text-2xl m-2' style={{height: 65}}>
           <a href="/roadmap" className=''>
             My Roadmap
           </a>
         </button>
-        <button className='bg-button-orange text-[#FFFFFF] rounded-lg px-7 py-3 text-2xl m-2' style={{height: 65}}>
+        <button className='bg-button-blue text-[#FFFFFF] rounded-lg px-7 py-3 text-2xl m-2' style={{height: 65}}>
           <a href="/header" className=''>
             Questionnaire
           </a>
         </button>
-        <button className='bg-button-orange text-[#FFFFFF] rounded-lg px-7 py-3 text-2xl m-2' style={{height: 65}}>
+        <button className='bg-button-blue text-[#FFFFFF] rounded-lg px-7 py-3 text-2xl m-2' style={{height: 65}}>
           <a href="/profile" className=''>
             My Profile
           </a>
