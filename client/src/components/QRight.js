@@ -5,6 +5,7 @@ import Question2 from './Question2'
 import Question3 from './Question3'
 import Question4 from './Question4'
 import Start from './Start'
+import Question5 from './Question5'
 
 const QRight = () => {
   return (
@@ -14,7 +15,7 @@ const QRight = () => {
         <p className='text-orange text-3xl'>About Yourself</p>
         </div>
         <div className='my-10'>
-            <Question4 />
+            <Question5 />
         </div>
 
     </div>
