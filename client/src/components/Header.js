@@ -6,8 +6,11 @@ const Header = () => {
   return (
     <>
     <div className='flex justify-between bg-[#D9D9D9]'>
-        <div className='m-8'>
+        <div className='m-6 text-3xl' id='header'>
             <img src={company} height = '150%' style={{width: 225}}/>   
+            {/* TechArtisans
+            <br />
+            Explore Menu */}
         </div>
         <div className='m-8 flex'>
         <button className='bg-button-blue text-[#FFFFFF] rounded-lg px-7 py-3 text-2xl m-2' style={{height: 65}}>

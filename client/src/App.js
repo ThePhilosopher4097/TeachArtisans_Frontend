@@ -9,6 +9,7 @@ import Explore from './pages/User/Explore';
 import Roadmap from './pages/User/Roadmap';
 // import Profile from './pages/User/Profile';
 import Questionnaire from './pages/User/Questionnaire'
+import Courses from './pages/User/Courses';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/explore" element = {<Explore />} />
         <Route path="/roadmap" element = {<Roadmap />} />
         <Route path="/questionnaire" element = {<Questionnaire />} />
+        <Route path="/courses" element = {<Courses />} />
 
 
       </Routes>
