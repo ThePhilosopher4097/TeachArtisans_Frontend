@@ -8,6 +8,7 @@ const Login = () => {
       <div className='flex overflow-hidden'>
         <div className='w-1/2'>
             <img src={login} style={{height: '73%' }}></img>
+            
         </div>
         <div className='w-1/3'>
             <h1 className='text-5xl text-center mt-[35px] font-bold'>

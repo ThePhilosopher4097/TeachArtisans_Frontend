@@ -49,6 +49,10 @@
 .textbox-1{
     align-self: flex-start;
     margin-top: 10em !important;
+    padding: 0em;
+}
+h1{
+    line-height: 2em;
 }
 
 .link-button{
@@ -127,4 +131,13 @@
     color: #5A41F3;
     padding: 1em 1.5em;
     text-align: left;
+}
+.svg{
+    height: 700px;
+    width: 1000px;
+}
+.svg2{
+    height: 700px;
+    width: 1000px;
+
 }
