@@ -9,9 +9,22 @@ import Explore from './pages/User/Explore';
 import Roadmap from './pages/User/Roadmap';
 // import Profile from './pages/User/Profile';
 import Questionnaire from './pages/User/Questionnaire'
-import CoursesPage from './pages/User/CoursesPage';
+import Courses from './pages/User/Courses';
 
 function App() {
+
+  const [data,setData] = useState({
+
+  });
+  useEffect(() => {
+    fetch("/").then((res) =>
+        res.json().then((data) => {
+            setData({
+            });
+        })
+    );
+}, []);
+
   return (
     <div className="App font-main h-full overflow-x-hidden">
       <Routes>
@@ -21,7 +34,7 @@ function App() {
         <Route path="/explore" element = {<Explore />} />
         <Route path="/roadmap" element = {<Roadmap />} />
         <Route path="/questionnaire" element = {<Questionnaire />} />
-        <Route path="/courses" element = {<CoursesPage />} />
+        <Route path="/courses" element = {<Courses />} />
 
 
       </Routes>

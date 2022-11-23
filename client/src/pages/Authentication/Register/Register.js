@@ -2,6 +2,7 @@ import React from 'react'
 import register from '../../../assets/Register.png'
 
 const Register = () => {
+  
   return (
     <>
     <div className='flex overflow-hidden'>
