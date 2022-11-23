@@ -27,6 +27,7 @@ function App() {
 }, []);
 
   return (
+    <>
     <div className="App font-main h-full overflow-x-hidden">
       <Routes>
         <Route path="/" element = {<Landings />} />
@@ -40,6 +41,16 @@ function App() {
 
       </Routes>
     </div>
+    {/* <div id="google_element">
+      <script src='//translate.google.com/translate_a/element.js?cb=loadingGoogleTranslate'></script>
+      <script>
+        function loadGoogleTranslate ()
+        {
+          new google.translate.TranslateElement("google_element")
+        }
+      </script>
+    </div> */}
+    </>
 
   );
 }
