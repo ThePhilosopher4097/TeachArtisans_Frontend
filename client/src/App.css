@@ -36,3 +36,94 @@
     transform: rotate(360deg);
   }
 }
+.default-layout {
+  display: grid;
+  grid-template-rows: 80px auto 3rem;
+  grid-template-areas: "header" "main" "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  min-height: 88vh;
+}
+
+
+.App-header {
+  /* background-color: #282c34; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.primary-shadow{
+  box-shadow: 0px 0px 10px 1px #32346799 ;
+}
+
+.glow{
+  box-shadow: 0px 0px 10px 3px #3b3b3b73 ;
+}
+
+.ant-btn-primary.dark[disabled]{
+  background-color: #101020;
+  border: 1px solid #101020 !important;
+  color: #E5E5E5;
+  opacity: 0.5;
+}
+
+/* .primary-shadow:hover{
+  background-color: #3f4281 !important;
+  box-shadow: 0px 0px 10px 1px #32346799 ;
+} */
+
+.auth-error{
+  color: red;
+  opacity: 0.5;
+  font-size: 0.9em;
+}
+
+.icon-carousel{
+  background-color: red !important;
+  /* display: inline !important; */
+  width: fit-content;
+  max-width: 80px !important;
+}
+
+.icon-carousel div{
+  display: inline-flex !important;
+  /* background-color: green; */
+  max-width: 100% !important;
+  /* max-width: 40px !important; */
+
+}
+
+.carousel-button-icon{
+  font-size: 1.2em;
+  margin-left: 0.2em;
+  color: white;
+}
+
+.success-green{
+  color: #10BC4B;
+}

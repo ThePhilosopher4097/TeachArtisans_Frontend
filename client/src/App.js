@@ -10,8 +10,23 @@ import Roadmap from './pages/User/Roadmap';
 // import Profile from './pages/User/Profile';
 import Questionnaire from './pages/User/Questionnaire'
 import Courses from './pages/User/Courses';
+import {useState, useEffect} from "react";
+import Landingspam from './pages/Landing/Landingspam'
 
 function App() {
+
+  const [data,setData] = useState({
+
+  });
+  useEffect(() => {
+    fetch("/").then((res) =>
+        res.json().then((data) => {
+            setData({
+            });
+        })
+    );
+}, []);
+
   return (
     <div className="App font-main h-full overflow-x-hidden">
       <Routes>
@@ -22,6 +37,7 @@ function App() {
         <Route path="/roadmap" element = {<Roadmap />} />
         <Route path="/questionnaire" element = {<Questionnaire />} />
         <Route path="/courses" element = {<Courses />} />
+        <Route path="/landings" element = {<Landingspam />} />
 
 
       </Routes>
