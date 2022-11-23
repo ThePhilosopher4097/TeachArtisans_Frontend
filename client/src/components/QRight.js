@@ -348,9 +348,9 @@ const QRight = () => {
     
     
   ]
-  const optionClicked = (event, a) => {
+  const optionClicked = (a) => {
   if (currentQuestion + 1 < questions.length) {
-    console.log(a.text);
+    console.log(a);
     setCurrentQuestion(currentQuestion + 1);
 
   } 
@@ -382,7 +382,7 @@ function handleNext(){
               return (
                 <li
                   key={option.id}
-                  onClick={event => optionClicked(event,option.id)}
+                  onClick={event => optionClicked(option.text)}
                   className='text-xl my-3'>
 
                   {option.text}

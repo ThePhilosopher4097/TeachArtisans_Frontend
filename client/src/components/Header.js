@@ -4,18 +4,19 @@ import user from '../assets/User_Logo.png'
 import './Header.css'
 import {Link} from 'react-router-dom'
 import { Button } from 'antd'
+import logo from '../assets/logo.png'
 
 const Header = () => {
   return (
     <>
-    <div className='flex justify-between bg-[#D9D9D9]' id='body'>
-        <div className='m-6 text-3xl'>
-            {/* <img src={company} height = '150%' style={{width: 225}}/>    */}
-            <h1 className='header'> 
+    <div className='flex justify-between bg-[#D9D9D9] h-[25%]' id='body'>
+        <div className='m-6 text-3xl '>
+            <img src={logo} alt="logo"/>   
+            {/* <h1 className='header'> 
               <span className='techa'> TechArtisans </span>
             <br />
               <h6 className='prop'> Explore Menu </h6>
-            </h1>
+            </h1> */}
         </div>
         <div className='m-8 flex'>
           

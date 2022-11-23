@@ -5,14 +5,17 @@ import './Landingspam.css';
 // import mobile from './assets/mobile.png';
 import mobile from '../../assets/mobile.png'
 import { Link } from 'react-router-dom';
-import bg1 from '../../assets/bg1.png'
+import bg1 from '../../assets/bg1.png';
+import logo from '../../assets/logo.png'
+
 export default function LandingPage() {
   return (
     <div>
       <div className='Heading'>
-      <h1 className=''> 
+      {/* <h1 className=''> 
         TechArtisans 
-      </h1>
+      </h1> */}
+      <img src={logo} alt="logo" />
       </div>
       <div className='menubar'>
         <Link to="/login">

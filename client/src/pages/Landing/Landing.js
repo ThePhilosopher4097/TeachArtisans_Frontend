@@ -2,6 +2,7 @@ import React from 'react'
 import './Landing.css'
 import landing from'../../assets/Landing Page BG 1.png'
 import techart from '../../assets/TechArtisans.png'
+import logo from '../../assets/logo.png'
 
 const Landing = () => {
   return (
@@ -10,7 +11,8 @@ const Landing = () => {
       <header className=' my-5'>
         <div className='flex justify-between'>
           <div>
-        <img src={techart} height = '150%' style={{width: 225}} className='m-4'/></div>
+        <img src={logo} className='m-4'/>
+        </div>
         <div>
         <nav className='text-right'>
           <a href="/login" className='text-right my-5 p-5 text-2xl mx-7'>

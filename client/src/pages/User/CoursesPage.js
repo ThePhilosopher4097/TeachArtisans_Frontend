@@ -94,7 +94,9 @@ const CoursesPage = () => {
   ];
   return (
     <>
-    <Header />
+    <div className="h-[20%]">
+      <Header />
+    </div>
     <div className="container pt-3" id='body'>
 
     <div className="row g-5">
