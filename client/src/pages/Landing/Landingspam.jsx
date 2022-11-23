@@ -6,14 +6,13 @@ import './Landingspam.css';
 import mobile from '../../assets/mobile.png'
 import { Link } from 'react-router-dom';
 import bg1 from '../../assets/bg1.png'
-
 export default function LandingPage() {
   return (
     <div>
       <div className='Heading'>
-       <a href="/register">
-            TechArtisans
-       </a>
+       <Link to = "/register">
+            <Button type='link' className='head'>TechArtisans</Button>
+       </Link>
       </div>
       <div className='menubar'>
         <Link to="/login">
