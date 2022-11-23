@@ -14,9 +14,9 @@ const Login = () => {
             <h1 className='text-5xl text-center mt-[35px] font-bold'>
                 Welcome Back 
             </h1>
-            <form className='my-[100px] text-center'>
-                <input type='email' placeholder='Enter your Email ID' className='my-[50px] text-4xl text-center border-x-0 border-t-0 border-b-2 border-[#5A41F3]'/>
-                <input type='password' placeholder='Enter your Password' className='my-[50px] text-4xl text-center border-x-0 border-t-0 border-b-2 border-[#5A41F3]'/>
+            <form method='POST' action='https://techartisans-backend.herokuapp.com/user/login' className='my-[100px] text-center'>
+                <input name='email' type='email' placeholder='Enter your Email ID' className='my-[50px] text-4xl text-center border-x-0 border-t-0 border-b-2 border-[#5A41F3]'/>
+                <input name='password' type='password' placeholder='Enter your Password' className='my-[50px] text-4xl text-center border-x-0 border-t-0 border-b-2 border-[#5A41F3]'/>
                 <br />
                 <button className='my-[40px] text-center text-3xl font-semibold text-[#FFF] bg-[#5A41F3] px-[70px] py-4 rounded-lg'>
                   Login
