@@ -1,12 +1,62 @@
 import React from 'react'
 import register from '../../../assets/Register.png'
+import {useState, useEffect} from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
-  function countryCode (e){
-    const code = e.target.value;
+
+  const navigate = useNavigate();
+  const [name, setName] = useState(null);
+  const [email, setEmail] = useState(null);
+  const [phone, setPhone] = useState(null);
+  const [password,setPassword] = useState(null);  
+  const [country, setCountry] = useState(null);
+
+  const handleNameChange =(e) => {
+    setName(e.target.value)
+  }
+  const handleEmailChange =(e) => {
+    setEmail(e.target.value)
+  }
+  const handlePhoneChange =(e) => {
+    setPhone(e.target.value)
+  }
+  const handlePasswordChange =(e) => {
+    setPassword(e.target.value)
+  }
+  const handleCountryChange =(e) => {
+    setCountry(e.target.value)
   }
   
-  
+  const handleSubmit  = async (e) => {
+	e.preventDefault();
+	console.log("Called ------->")
+	console.log(name,email,phone,password,country);
+	
+	
+	const student = {
+		name:name,
+		email:email,
+		phone:phone,
+		password:password,
+		country:country
+	}       
+
+    console.log(JSON.stringify(student));
+	
+    const response = await fetch('http://127.0.0.1:5000/user/signup/',{
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(student)
+    })
+    if(response.ok){
+      console.log('response')
+      navigate("/login");
+    }
+	navigate("/register");
+  }
   return (
     <>
     <div className='flex overflow-hidden'>
@@ -20,14 +70,14 @@ const Register = () => {
               Register
           </h1>
           <form className='my-[100px] mt-[35px] text-center'>
-              <input type='text' placeholder='Enter your Full Name' className='my-[20px] text-2xl text-center border-2 border-[#5A41F3] w-3/4 rounded-lg h-12'/>
-              <input type='email' placeholder='Enter your Email ID' className='my-[20px] text-2xl text-center border-2 border-[#5A41F3] w-3/4 rounded-lg h-12'/>
-              <input type='password' placeholder='Enter your Password' className='my-[20px] text-2xl text-center border-2 border-[#5A41F3] w-3/4 rounded-lg h-12'/>
+              <input onChange = {(e) => handleNameChange(e)} type='text' placeholder='Enter your Full Name' className='my-[20px] text-2xl text-center border-2 border-[#5A41F3] w-3/4 rounded-lg h-12'/>
+              <input onChange = {(e) => handleEmailChange(e)} type='email' placeholder='Enter your Email ID' className='my-[20px] text-2xl text-center border-2 border-[#5A41F3] w-3/4 rounded-lg h-12'/>
+              <input onChange = {(e) => handlePasswordChange(e)} type='password' placeholder='Enter your Password' className='my-[20px] text-2xl text-center border-2 border-[#5A41F3] w-3/4 rounded-lg h-12'/>
               <input type='password' placeholder='Re-Enter your password' className='my-[20px] text-2xl text-center border-2 border-[#5A41F3] w-3/4 rounded-lg h-12'/>
               
-                <input type='text' placeholder='Enter your City' className='mx-[5px] my-[20px] text-2xl text-center border-2 border-[#5A41F3] w-3/4 rounded-lg h-12'/>
+                <input onChange = {(e) => handleCountryChange(e)} type='text' placeholder='Enter your City' className='mx-[5px] my-[20px] text-2xl text-center border-2 border-[#5A41F3] w-3/4 rounded-lg h-12'/>
                 <div className=''>
-                <select name="countryCode" className='w-3/4 mt-1 text-xl text-center border-2 border-[#5A41F3] rounded-lg h-12' onChange={countryCode}>
+                <select name="countryCode" className='w-3/4 mt-1 text-xl text-center border-2 border-[#5A41F3] rounded-lg h-12'>
                 <option id="code" selected disabled value="null">Select Country code</option>
 				<option data-countryCode="DZ" value="213">Algeria (+213)</option>
 		<option data-countryCode="AD" value="376">Andorra (+376)</option>
@@ -246,19 +296,18 @@ const Register = () => {
                         
                 </select>
                 
-                <input type='number' placeholder='Phone Number' className='mx-[5px] my-[20px] text-2xl text-center border-2 border-[#5A41F3] w-3/4 rounded-lg h-12'/>
-                <label className='text-2xl'>Upload Resume (optional) </label>
-                <input type="file" accept='.pdf' className='text-2xl text-center border-2 border-[#5A41F3] w-3/4 rounded-lg h-12'/>
+                <input onChange = {(e) => handlePhoneChange(e)} type='number' placeholder='Phone Number' className='mx-[5px] my-[20px] text-2xl text-center border-2 border-[#5A41F3] w-3/4 rounded-lg h-12'/>
+                
                 </div>
               <br />
-              <button className='my-[25px] text-center text-3xl font-semibold text-[#FFF] bg-[#5A41F3] px-[70px] py-4 rounded-lg'>
+              <button onClick={handleSubmit} className='my-[25px] text-center text-3xl font-semibold text-[#FFF] bg-[#5A41F3] px-[70px] py-4 rounded-lg'>
                 <a href='/login'>Register</a>
               </button>
               <p className='text-xl'>Already have an account ? <a href='/login' className='underline font-bold text-[#5A41F3]'> Login Here </a> </p>
 
           </form>
           <br />
-         
+		  
       </div>
     </div>
     
