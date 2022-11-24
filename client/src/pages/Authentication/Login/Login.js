@@ -45,13 +45,13 @@ const Login = () => {
 
     console.log("Email: ", email);
     console.log("Password: ", password);
-    navigate("/questionnaire");
+    //navigate("/questionnaire");
 
     const myBody = {email: email, password: password};
     console.log(JSON.stringify(myBody));
-    const response = await fetch('https://techartisans-backend.herokuapp.com/user/login',{
+    const response = await fetch('https://techartisans-backend.herokuapp.com/user/login/',{
       method: "POST",
-      mode: 'no-cors',
+      /*mode: 'no-cors',*/
       headers: {
         'Content-Type': 'application/json'
       },
@@ -59,9 +59,9 @@ const Login = () => {
     })
     if(response.ok){
       console.log('response')
-      // navigate("/questionnaire");
+      navigate("/questionnaire");
     }
-    // navigate("/questionnaire");
+    //navigate("/questionnaire");
   }
   return (
     <>
