@@ -3,3 +3,29 @@
     height: 100%;
     background-size: 100%;
 }
+
+.dot{
+    width: 1px;
+}
+.item{
+    background-color: white;
+    border: none;
+}
+.item :hover{
+    background-color: white;
+    border: none;
+}
+li{
+    background-color: white;
+    color: black;
+    width: 80%;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+li:hover{
+    background-color: white;
+    color: black;
+
+}

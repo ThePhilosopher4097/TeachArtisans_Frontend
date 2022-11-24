@@ -40,7 +40,7 @@ const Header = () => {
         <button id='but' className='bg-button-blue text-[#FFFFFF] rounded-lg px-7 py-3 text-2xl m-2' style={{height: 65}}>
           <Link to='/explore'>
             <Button type='' className='button1'>
-              Explore
+              Translate
             </Button>
           </Link>
         </button>

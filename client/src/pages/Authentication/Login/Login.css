@@ -2,4 +2,9 @@
 input:focus{
     outline: none;
 }
+#loginButton:hover{
+    background-color: #F37920;
+    transition-duration: 1s;
+
+}
 
