@@ -110,6 +110,7 @@ class Login(Resource):
         return make_response(jsonify({'error': 'Incorrect credentials'}), 601)
   
   
+    
 # adding the defined resources along with their corresponding urls
 api.add_resource(Root, '/')
 api.add_resource(Register, '/user/signup/')

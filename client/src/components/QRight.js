@@ -399,20 +399,24 @@ const QRight = () => {
   const answers = [];
   const navigate = useNavigate();
   const optionClicked = (a) => {
+    // questions[currentQuestion].answer = a;
+
   if (currentQuestion + 1 < questions.length) {
     // console.log(a);
     answers[currentQuestion] = a;
     setCurrentQuestion(currentQuestion + 1);
   } 
   else{
-    const response = fetch('https://techartisans-backend.herokuapp.com/user/ques/',{
+    const response = fetch('https://techartisans-backend.herokuapp.com/ques/',{
       method: "POST",
       /*mode: 'no-cors',*/
       headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(answers)
+      
     })
+    console.log(JSON.stringify(answers))
     if(response.ok){
       console.log('response')
     }
@@ -432,7 +436,7 @@ function handleNext(){
   setCurrentQuestion(currentQuestion+1);
 }
 
-console.log(answers);
+// console.log(answers);
 
   return (
     <div className='m-auto mb-5' id='ques'>
