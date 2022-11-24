@@ -402,11 +402,14 @@ const QRight = () => {
     // questions[currentQuestion].answer = a;
 
   if (currentQuestion + 1 < questions.length) {
-    // console.log(a);
+    console.log(a);
+    // questions[currentQuestion].answer = a;
     answers[currentQuestion] = a;
+    console.log(answers);
     setCurrentQuestion(currentQuestion + 1);
   } 
   else{
+    console.log(JSON.stringify(answers))
     const response = fetch('https://techartisans-backend.herokuapp.com/ques/',{
       method: "POST",
       /*mode: 'no-cors',*/
@@ -414,9 +417,7 @@ const QRight = () => {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(answers)
-      
     })
-    console.log(JSON.stringify(answers))
     if(response.ok){
       console.log('response')
     }
