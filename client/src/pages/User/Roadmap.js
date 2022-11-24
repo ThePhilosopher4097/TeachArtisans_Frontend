@@ -21,9 +21,9 @@ const Roadmap = () => {
         <div className='w-1/3 text-center'>
             <p className='text-2xl m-4 font-semibold'>According to your choices the paths you can choose are: </p>
             <ul className='text-center pl-20 text-2xl mb-5'>
-                <li>Front-End Developer</li>
-                <li>Back-End Developer</li>
-                <li>Data Analyst</li>
+                <li>{}</li>
+                <li>{}</li>
+                <li>{}</li>
             </ul>
             <hr />
             
