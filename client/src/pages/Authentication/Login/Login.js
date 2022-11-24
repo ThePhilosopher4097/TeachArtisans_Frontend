@@ -51,7 +51,7 @@ const Login = () => {
     console.log(JSON.stringify(myBody));
     const response = await fetch('https://techartisans-backend.herokuapp.com/user/login',{
       method: "POST",
-      mode: 'cors',
+      mode: 'no-cors',
       headers: {
         'Content-Type': 'application/json'
       },
@@ -59,7 +59,7 @@ const Login = () => {
     })
     if(response.ok){
       console.log('response')
-      navigate("/questionnaire");
+      // navigate("/questionnaire");
     }
     // navigate("/questionnaire");
   }

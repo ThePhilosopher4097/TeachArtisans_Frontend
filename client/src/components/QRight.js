@@ -379,8 +379,10 @@ function handleNext(){
                   key={option.id}
                   onClick={event => optionClicked(option.text)}
                   className='text-xl my-3'>
+                    
 
                   {option.text}
+                  
                 </li>
               );
             })}
