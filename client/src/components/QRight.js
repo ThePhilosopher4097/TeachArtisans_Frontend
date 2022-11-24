@@ -21,6 +21,7 @@ const QRight = () => {
         { id: 3, text: "22 or Above"},
       ],
       section: "About Yourself",
+      answer: "",
     },
     {
       text: "What is your Gender ?",
@@ -30,6 +31,7 @@ const QRight = () => {
         { id: 2, text: "Other"},
       ],
       section: "About Yourself",
+      answer: "",
     },
     {
       text: "Which of the following identifies with your permanent residence?",
@@ -38,6 +40,7 @@ const QRight = () => {
         { id: 1, text: "Rural",},
       ],
       section: "About Yourself",
+      answer: "",
     },
     {
       text: "Which category identifies the occupation of your Parent(s)?",
@@ -46,8 +49,10 @@ const QRight = () => {
         { id: 1, text: "Agriculture"},
         { id: 2, text: "Business / Start Up"},
         { id: 3, text: "Working Class"},
+        
       ],
       section: "About Yourself",
+      answer: "",
     },
     {
       text: "According to the income slabs in your country what attribute suits you the best ?",
@@ -58,6 +63,7 @@ const QRight = () => {
         { id: 3, text: "Upper Middle Class / Rich"},
       ],
       section: "About Yourself",
+      answer: "",
     },
     {
       text: "What identifies you personality ?",
@@ -67,6 +73,7 @@ const QRight = () => {
         { id: 2, text: "Extroverted"},
         ],
         section: "About Yourself",
+        answer: "",
 
     },
     {
@@ -77,7 +84,11 @@ const QRight = () => {
         { id: 2, text: "Focused on work right now, would look for building relationships later"},
         { id: 3, text: "Work is my life ! Stay single, stay rich, stay independant!"},
         ],
+        section: "About Yourself",
+        answer: "",
+
     },
+
     {
       text: "What is the highest level of education you have completed ?",
       options: [
@@ -87,6 +98,7 @@ const QRight = () => {
         { id: 3, text: "Class 12th or equivalent(Diploma) "},
       ],
       section: "Education",
+      answer: "",
     },
     {
       text: "What board did you study in until 10th ?",
@@ -97,6 +109,7 @@ const QRight = () => {
         { id: 3, text: "Other"},
       ],
       section: "Education",
+      answer: "",
     },
     {
       text: "What was your language medium till class 10th ?",
@@ -107,6 +120,7 @@ const QRight = () => {
         { id: 3, text: "Regional Language"},
       ],
       section: "Education",
+      answer: "",
     },
     {
       text: "How has your Academic performance been so far?",
@@ -117,6 +131,7 @@ const QRight = () => {
         { id: 3, text: "Excellent (CGPA < 9.0 or Percentage < 100%)"},
       ],
       section: "Education",
+      answer: "",
     },
     {
       text: "What field would you like to pursue?",
@@ -128,6 +143,7 @@ const QRight = () => {
         { id: 4, text: "Law / Political Science"},
       ],
       section: "Education",
+      answer: "",
     },
     {
       text: "In which Tier College do you study?",
@@ -138,6 +154,7 @@ const QRight = () => {
         { id: 3, text: "Tier 4 (Local Private Colleges)"},
       ],
       section: "Education",
+      answer: "",
     },
     {
       text: "What is your current Engineering Branch?",
@@ -148,6 +165,7 @@ const QRight = () => {
         { id: 3, text: "Chemical/BioTech"},
       ],
       section: "Education",
+      answer: "",
     },
     {
       text: "Which domain do you feel the most comfortable with?",
@@ -163,6 +181,7 @@ const QRight = () => {
         { id: 8, text: "Full-Stack Development"},
       ],
       section: "Software Skills",
+      answer: "",
     },
     {
       text: "How good are you at coding (Remember: Honesty is the best policy) ?",
@@ -173,6 +192,7 @@ const QRight = () => {
         { id: 3, text: "Pro: Have been learning for a long time and have made some large scale projects"},
       ],
       section: "Software Skills",
+      answer: "",
     },
     {
       text: "Which domain are you looking to master?",
@@ -188,6 +208,7 @@ const QRight = () => {
         { id: 8, text: "Full-Stack Development"},
       ],
       section: "Software Skills",
+      answer: "",
     },
     {
       text: "Have you done any courses/certifications in the same?",
@@ -198,6 +219,7 @@ const QRight = () => {
         { id: 3, text: "Yes, many"},
       ],
       section: "Software Skills",
+      answer: "",
     },
     {
       text: "Have you done any internships?",
@@ -207,6 +229,7 @@ const QRight = () => {
         { id: 2, text: "No, but keep Applying"},
       ],
       section: "Work Experience",
+      answer: "",
     },
     {
       text: "How much Work Experience do you have ?",
@@ -219,6 +242,7 @@ const QRight = () => {
         { id: 5, text: "Have been working for more than 2 years"},
       ],
       section: "Work Experience",
+      answer: "",
     },
     {
       text: "After completing your degree would you like to pursue Masters ?",
@@ -229,6 +253,7 @@ const QRight = () => {
         { id: 3, text: "Yes"},
         ],
         section: "Higher Studies",
+        answer: "",
     },
     {
       text: "Would you like to pursue Masters abroad ?",
@@ -239,6 +264,7 @@ const QRight = () => {
         { id: 3, text: "Yes"},
         ],
         section: "Higher Studies",
+        answer: "",
     },
     {
       text: "If Yes, Then in which country/continent?",
@@ -249,6 +275,7 @@ const QRight = () => {
         { id: 3, text: "Australia"},
         ],
         section: "Higher Studies",
+        answer: "",
     },
     {
       text: "Have you started preparing for any competetive exams for Masters?",
@@ -259,6 +286,7 @@ const QRight = () => {
         { id: 3, text: "Cleared GRE/TOEFL"},
         ],
         section: "Higher Studies",
+        answer: "",
     },
     {
       text: "Which of the following suits you best?",
@@ -269,6 +297,7 @@ const QRight = () => {
         { id: 3, text: "Freelancing"},
         ],
         section: "Jobs",
+        answer: "",
     },
     {
       text: "Which kind of a company do you prefer?",
@@ -279,15 +308,17 @@ const QRight = () => {
         { id: 3, text: "MAANG"},
         ],
         section: "Jobs",
+        answer: "",
     },
     {
-      text: "What is you type?",
+      text: "What is your type?",
       options: [
         { id: 0, text: "Focus more on academics"},
         { id: 1, text: "Focus more on side hussle"},
         { id: 2, text: "Try to maintain a balance"},
         ],
         section: "Jobs",
+        answer: "",
     },
     {
       text: "What package do you expect as a fresher?",
@@ -298,6 +329,28 @@ const QRight = () => {
         { id: 3, text: "15 LPA + "},
         ],
         section: "Jobs",
+        answer: "",
+    },
+    {
+      text: "Do you have interest in teaching?",
+      options: [
+        { id: 0, text: "Nope"},
+        { id: 1, text: "May be"},
+        { id: 2, text: "Yes, I love teaching others"},
+        ],
+        section: "Jobs",
+        answer: "",
+    },
+    {
+      text: "Have interest in Finance, Stock Market, Economical?",
+      options: [
+        { id: 0, text: "No, it is too boring"},
+        { id: 1, text: "Not interested but need to get invlovled sometimes"},
+        { id: 2, text: "Yes, Interested"},
+        { id: 3, text: "Oh Yes, I like to talk about and take care of many things"},
+        ],
+        section: "Jobs",
+        answer: "",
     },
     {
       text: "What do you identify with more?",
@@ -306,6 +359,7 @@ const QRight = () => {
         { id: 1, text: "Management"},
         ],
         section: "Jobs",
+        answer: "",
     },
     {
       text: "What work type suits you best?",
@@ -315,6 +369,7 @@ const QRight = () => {
         { id: 2, text: "Work from Office"},
         ],
         section: "Jobs",
+        answer: "",
     },
     {
       text: "What resembles you?",
@@ -325,6 +380,7 @@ const QRight = () => {
         { id: 3, text: "Study and Parallely do side hustle and build something of my own"},
         ],
         section: "Jobs",
+        answer: "",
     },
     {
       text: "What is your preferred work culture?",
@@ -335,27 +391,48 @@ const QRight = () => {
         { id: 3, text: "Intense work along with side hussle"},
         ],
         section: "Jobs",
+        answer: "",
     },
     
     
   ]
+  const answers = [];
   const navigate = useNavigate();
   const optionClicked = (a) => {
   if (currentQuestion + 1 < questions.length) {
-    console.log(a);
+    // console.log(a);
+    answers[currentQuestion] = a;
     setCurrentQuestion(currentQuestion + 1);
-
   } 
   else{
+    const response = fetch('https://techartisans-backend.herokuapp.com/user/ques/',{
+      method: "POST",
+      /*mode: 'no-cors',*/
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(answers)
+    })
+    if(response.ok){
+      console.log('response')
+    }
     navigate("/roadmap");
+    
   }
 }
+// for(let i=0;i<34;i++)
+// {
+//   console.log(answers[i]);
+// }
+
 function handleBack(){
   setCurrentQuestion(currentQuestion-1);
 }
 function handleNext(){
   setCurrentQuestion(currentQuestion+1);
 }
+
+console.log(answers);
 
   return (
     <div className='m-auto mb-5' id='ques'>
@@ -392,7 +469,7 @@ function handleNext(){
             <button onClick={handleBack} className='btn btn-danger btn-lg rounded-full text-center' id='back'>Back</button>
           </div>
           <div >
-            <button onClick={handleNext} className='btn btn-success btn-lg rounded-full btn-lg' id='next'>Next</button>
+            <button onClick={handleNext} className='btn btn-success btn-lg rounded-full' id='next'>Next</button>
           </div>
         </div>
         </div>
