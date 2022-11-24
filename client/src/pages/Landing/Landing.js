@@ -2,7 +2,8 @@ import React from 'react'
 import './Landing.css'
 import landing from'../../assets/Landing Page BG 1.png'
 import techart from '../../assets/TechArtisans.png'
-import logo from '../../assets/logo.png'
+// import logo from '../../assets/logo.png'
+import logo from '../../assets/logo (2).png'
 
 const Landing = () => {
   return (

@@ -6,7 +6,9 @@ import './Landingspam.css';
 import mobile from '../../assets/mobile.png'
 import { Link } from 'react-router-dom';
 import bg1 from '../../assets/bg1.png';
-import logo from '../../assets/logo.png'
+// import logo from '../../assets/logo.png'
+import logo from '../../assets/newerlogo.jpg'
+
 
 export default function LandingPage() {
   return (
@@ -15,7 +17,7 @@ export default function LandingPage() {
       {/* <h1 className=''> 
         TechArtisans 
       </h1> */}
-      <img src={logo} alt="logo" />
+      <img src={logo} style={{width: '15%'}} alt="logo" />
       </div>
       <div className='menubar'>
         <Link to="/login">
@@ -29,12 +31,12 @@ export default function LandingPage() {
         <div className='slides slide-1'>
           <div className="slide-wrapper">
           <div className="textbox-1">
-              <h1 ><span className='blue'> Find </span></h1>
+              <h1 className='mt-5'><span className='blue'> Find </span></h1>
               <h1> your <span className='orange'>Best</span></h1>
-              <h1> <span className='red'>Career</span> path </h1>
-              <h1>within a snap</h1>
+              <h1> <span className='red'>Career</span> Path </h1>
+              <h1>Within A Snap</h1>
 
-            </div>
+          </div>
             <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -73,13 +75,12 @@ export default function LandingPage() {
 
         <div className='slides slide-2'>
           <div className="slide-wrapper">
-            <img src={mobile} alt="Mobile"></img>
+            <img src={mobile} alt="Mobile" className='mobile'></img>
             
-            <div className="textbox-2">
-            <h1> <span className='red'>Shaping</span> your </h1> <h1> <span className='blue'> Career </span></h1>
-            <br />
-            <br />
-            <h1> <span className='red'>Demistifying</span> the </h1> <h1> <span className='blue'> Future </span></h1>
+            <div className="textbox-2 mb-5">
+            <h1> <span className='red'>Shaping</span> Your </h1> <h1> <span className='blue'> Career
+             </span></h1>
+            <h1> <span className='red'>Demistifying</span> The </h1> <h1> <span className='blue'> Future </span></h1>
             </div>
 
            

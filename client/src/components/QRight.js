@@ -7,6 +7,7 @@ import Question4 from './Question4'
 import Start from './Start'
 import Question5 from './Question5'
 import { useState } from 'react'
+import {useNavigate} from 'react-router-dom'
 
 const QRight = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -45,16 +46,6 @@ const QRight = () => {
         { id: 1, text: "Agriculture"},
         { id: 2, text: "Business / Start Up"},
         { id: 3, text: "Working Class"},
-      ],
-      section: "About Yourself",
-    },
-    {
-      text: "According to the income slabs in your country what attribute suits you the best ?",
-      options: [
-        { id: 0, text: "Below Poverty Line"},
-        { id: 1, text: "Lower Middle Class"},
-        { id: 2, text: "Middle Class"},
-        { id: 3, text: "Upper Middle Class / Rich"},
       ],
       section: "About Yourself",
     },
@@ -128,7 +119,7 @@ const QRight = () => {
       section: "Education",
     },
     {
-      text: "How has your Academic performance been so far?",
+      text: "What field would you like to pursue?",
       options: [
         { id: 0, text: "Science and Technology / Engineering"},
         { id: 1, text: "Medical / Pharmacy"},
@@ -348,12 +339,16 @@ const QRight = () => {
     
     
   ]
+  const navigate = useNavigate();
   const optionClicked = (a) => {
   if (currentQuestion + 1 < questions.length) {
     console.log(a);
     setCurrentQuestion(currentQuestion + 1);
 
   } 
+  else{
+    navigate("/roadmap");
+  }
 }
 function handleBack(){
   setCurrentQuestion(currentQuestion-1);
@@ -363,13 +358,13 @@ function handleNext(){
 }
 
   return (
-    <div className='m-auto mb-5'>
+    <div className='m-auto mb-5' id='ques'>
         <div id='font' className='my-3'>
         <p className='text-blue text-3xl m-auto'>Section: </p>
         <p className='text-orange text-3xl m-auto'>{questions[currentQuestion].section}</p>
         </div>
         {/* <Question /> */}
-        <div className="question-card my-10">
+        <div className="question-card my-10 px-04">
           {/* Current Question  */}
           <h2 className='text-2xl mb-5'>
             Question: {currentQuestion + 1} out of {questions.length}
@@ -390,12 +385,12 @@ function handleNext(){
               );
             })}
           </ol>
-          <div className='flex justify-evenly my-10'>
+          <div className='flex justify-between my-10'>
           <div >
-            <button onClick={handleBack} className='btn bg-[#000] text-[#fff] text-xl'>Back</button>
+            <button onClick={handleBack} className='btn btn-danger btn-lg rounded-full text-center' id='back'>Back</button>
           </div>
           <div >
-            <button onClick={handleNext} className='btn bg-[#000] text-[#fff] text-xl'>Next</button>
+            <button onClick={handleNext} className='btn btn-success btn-lg rounded-full btn-lg' id='next'>Next</button>
           </div>
         </div>
         </div>

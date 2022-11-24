@@ -7,7 +7,7 @@
     margin-top: 30px;
   
     /* Dimensions  */
-    width: 500px; /* Can be in percentage also. */
+    width: 600px; /* Can be in percentage also. */
     height: auto;
   
     /* Visual  */
@@ -37,4 +37,20 @@
     border: 3px solid white;
     border-radius: 20px;
     cursor: pointer;
+  }
+  #back{
+      padding: 10px 20px;
+      font-size: 20px;
+      border-radius: 15%;
+      /* width: 150%; */
+      text-align: center;
+  
+  }
+  #next{
+      padding: 10px 20px;
+      font-size: 20px;
+      border-radius: 15%;
+      /* width: 150%; */
+      text-align: center;
+
   }

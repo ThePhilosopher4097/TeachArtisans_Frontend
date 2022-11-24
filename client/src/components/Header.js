@@ -4,20 +4,22 @@ import user from '../assets/User_Logo.png'
 import './Header.css'
 import {Link} from 'react-router-dom'
 import { Button } from 'antd'
-import logo from '../assets/logo.png'
+import logo from '../assets/newerlogo.jpg'
 
 const Header = () => {
   return (
     <>
-    <div className='flex justify-between bg-[#D9D9D9] h-[25%]' id='body'>
-        <div className='m-6 text-3xl '>
-            <img src={logo} alt="logo"/>   
-            {/* <h1 className='header'> 
-              <span className='techa'> TechArtisans </span>
+    <div className='flex justify-between  h-[25%]' id='body'>
+        {/* <div className='flex m-6 text-3xl'> */}
+            <div className='mx-4 mt-3'><img className='w-[50%]' src={logo} style={{}} alt="logo"/> </div>  
+            {/* <div className='mt-0'>
+              <p className='header' id='header'> 
+              <span className='techa'> CareerYantra </span>
             <br />
-              <h6 className='prop'> Explore Menu </h6>
-            </h1> */}
-        </div>
+              <p className='prop'>Learn.Grow.Excel</p>
+            </p>
+            </div>
+        </div> */}
         <div className='m-8 flex'>
           
         <button id='but' className='bg-button-blue text-[#FFFFFF] rounded-lg px-7 py-3 text-2xl m-2' style={{height: 65}}>
