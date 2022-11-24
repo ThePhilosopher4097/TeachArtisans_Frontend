@@ -75,8 +75,8 @@ const Login = () => {
                 Welcome Back 
             </h1>
             <form id='loginForm' onSubmit={handleSubmit} className='my-[100px] text-center'>
-                <input onChange={handleEmailChange} name='email' type='email' placeholder='Enter your Email ID' className='my-[50px] text-4xl text-center border-x-0 border-t-0 border-b-2 border-[#5A41F3]'/>
-                <input onChange={handlePasswordChange} name='password' type='password' placeholder='Enter your Password' className='my-[50px] text-4xl text-center border-x-0 border-t-0 border-b-2 border-[#5A41F3]'/>
+                <input onChange={handleEmailChange} name='email' type='email' placeholder='Enter your Email ID' className='my-[50px] text-4xl text-center  border-2 border-[#5A41F3] rounded-lg h-16'/>
+                <input onChange={handlePasswordChange} name='password' type='password' placeholder='Enter your Password' className='my-[50px] text-4xl text-center border-2 border-[#5A41F3] rounded-lg h-16'/>
                 <br />
                 <button id='loginButton' className='my-[40px] text-center text-3xl font-semibold text-[#FFF] bg-[#5A41F3] px-[70px] py-4 rounded-lg'>
                   Login

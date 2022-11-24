@@ -16,12 +16,13 @@ const Register = () => {
               Register
           </h1>
           <form className='my-[100px] mt-[35px] text-center'>
-              <input type='text' placeholder='Enter your Full Name' className='my-[20px] text-2xl text-center border-x-0 border-t-0 border-b-2 border-[#5A41F3] w-3/4'/>
-              <input type='email' placeholder='Enter your Email ID' className='my-[20px] text-2xl text-center border-x-0 border-t-0 border-b-2 border-[#5A41F3] w-3/4'/>
-              <input type='password' placeholder='Enter your Password' className='my-[20px] text-2xl text-center border-x-0 border-t-0 border-b-2 border-[#5A41F3] w-3/4'/>
-              <input type='password' placeholder='Re-Enter your password' className='my-[20px] text-2xl text-center border-x-0 border-t-0 border-b-2 border-[#5A41F3] w-3/4'/>
-              <div className='flex justify-evenly'>
-                <input type='text' placeholder='Enter your City' className='mx-[5px] my-[20px] text-2xl text-center border-x-0 border-t-0 border-b-2 border-[#5A41F3] w-3/4'/>
+              <input type='text' placeholder='Enter your Full Name' className='my-[20px] text-2xl text-center border-2 border-[#5A41F3] w-3/4 rounded-lg h-12'/>
+              <input type='email' placeholder='Enter your Email ID' className='my-[20px] text-2xl text-center border-2 border-[#5A41F3] w-3/4 rounded-lg h-12'/>
+              <input type='password' placeholder='Enter your Password' className='my-[20px] text-2xl text-center border-2 border-[#5A41F3] w-3/4 rounded-lg h-12'/>
+              <input type='password' placeholder='Re-Enter your password' className='my-[20px] text-2xl text-center border-2 border-[#5A41F3] w-3/4 rounded-lg h-12'/>
+              
+                <input type='text' placeholder='Enter your City' className='mx-[5px] my-[20px] text-2xl text-center border-2 border-[#5A41F3] w-3/4 rounded-lg h-12'/>
+                <div className='flex'>
                 <select name="countryCode" id="" className='w-1/4 mt-1 text-xl'>
                     <option data-countryCode="IN" value="91">+91</option>
                     <option data-countryCode="DZ" value="213">+213</option>
@@ -239,10 +240,11 @@ const Register = () => {
                     <option data-countryCode="ZW" value="263"> +263 </option>
                         
                 </select>
-                <input type='number' placeholder='Phone Number' className='mx-[5px] my-[20px] text-2xl text-center border-x-0 border-t-0 border-b-2 border-[#5A41F3] w-3/4'/>
+                
+                <input type='number' placeholder='Phone Number' className='mx-[5px] my-[20px] text-2xl text-center border-2 border-[#5A41F3] w-3/4 rounded-lg h-12'/>
 
 
-              </div>
+                </div>
               <br />
               <button className='my-[25px] text-center text-3xl font-semibold text-[#FFF] bg-[#5A41F3] px-[70px] py-4 rounded-lg'>
                 <a href='/login'>Register</a>
