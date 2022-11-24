@@ -1,3 +1,43 @@
-#header{
-font-family: 'IM Fell DW Pica SC', serif;
+.header{
+    width: 100%;
+    font-family: 'Dancing Script', cursive;
+    top: 0;
+    color: black;
+    padding-top: 0.8em;
+    text-align: left;
+}
+.techa{
+    font-size: 1.3em;
+}
+.prop{
+    font-size: 0.8em;
+    color: #868686;
+    font-family: 'IM Fell DW Pica SC', serif;;
+
+}
+
+.head{
+    color: whitesmoke;
+    background-color: #5A41F3;
+    width: 10px;
+    height: 10px;
+    align-self: flex-start;
+
+}
+#buttons{
+    display: flex;
+}
+.button1{
+    font-size: 1em;
+    text-align: center;
+    margin: auto;
+    color: whitesmoke;
+}
+#but{
+    display: inline-flex;
+    align-items: center;
+    line-height: 2em;
+}
+.photo{
+    line-height: 0em;
 }

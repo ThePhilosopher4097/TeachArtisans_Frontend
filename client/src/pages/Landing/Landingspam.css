@@ -10,6 +10,7 @@
     background-size: 40vh;
     height: 100vh;
     width: 100vw;
+    text-align: left;
 }
 
 .slide-2{
@@ -48,6 +49,14 @@
 .textbox-1{
     align-self: flex-start;
     margin-top: 10em !important;
+    padding: 0em;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 900;
+
+}
+h1{
+    line-height: 1.5em;
+
 }
 
 .link-button{
@@ -113,5 +122,32 @@
     color: #FF2C2C
 }
 .textbox-2{
-    padding: 1em;
+    /* padding: 1em; */
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 900;
+}
+
+.head{
+    width: 100%;
+    font-family: 'IM Fell DW Pica SC', serif;
+    position: fixed;
+    z-index: 1000000;
+    top: 0;
+    font-size: xx-large;
+    color: #5A41F3;
+    padding: 1em 1.5em;
+    text-align: left;
+}
+.svg{
+    height: 700px;
+    width: 1000px;
+}
+.svg2{
+    height: 700px;
+    width: 1000px;
+    /* transform: scale(-1,-1); */
+
+}
+.mobile{
+    transform: scale(-1,1);
 }
