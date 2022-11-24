@@ -55,7 +55,6 @@ const Register = () => {
       console.log('response')
       navigate("/login");
     }
-	navigate("/register");
   }
   return (
     <>

@@ -9,7 +9,11 @@ import Question5 from './Question5'
 import { useState } from 'react'
 import {useNavigate} from 'react-router-dom'
 
+let answers = [];
+
 const QRight = () => {
+
+
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const questions = [
     {
@@ -396,27 +400,45 @@ const QRight = () => {
     
     
   ]
-  const answers = [];
+  
   const navigate = useNavigate();
   const optionClicked = (a) => {
-    // questions[currentQuestion].answer = a;
+    questions[currentQuestion].answer = a;
+    console.log("Current Question ---> ", currentQuestion)
+    console.log(JSON.stringify(answers));
 
-  if (currentQuestion + 1 < questions.length) {
-    console.log(a);
-    // questions[currentQuestion].answer = a;
-    answers[currentQuestion] = a;
-    console.log(answers);
-    setCurrentQuestion(currentQuestion + 1);
+    if (currentQuestion + 1 <= questions.length) {
+      console.log(a);
+      questions[currentQuestion].answer = a;
+      answers.push(a); 
+      
+      if (currentQuestion + 1 == questions.length) {
+        const response = fetch('http://127.0.0.1:5000/ques/',{
+        method: "POST",
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(answers)
+        })
+        if(response.ok){
+          console.log('response')
+        }
+        navigate("/roadmap");
+    }
+    else
+      setCurrentQuestion(currentQuestion + 1);
   } 
   else{
     console.log(JSON.stringify(answers))
+    console.log("Inside Else ---------->")
     const response = fetch('https://techartisans-backend.herokuapp.com/ques/',{
       method: "POST",
       /*mode: 'no-cors',*/
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(answers)
+      body: {name:"Sohan"}
     })
     if(response.ok){
       console.log('response')

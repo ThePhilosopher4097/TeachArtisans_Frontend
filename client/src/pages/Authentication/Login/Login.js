@@ -45,7 +45,7 @@ const Login = () => {
 
     console.log("Email: ", email);
     console.log("Password: ", password);
-    navigate("/questionnaire");
+    // navigate("/questionnaire");
 
     const myBody = {email: email, password: password};
     console.log(JSON.stringify(myBody));
@@ -61,7 +61,10 @@ const Login = () => {
       console.log('response')
       navigate("/questionnaire");
     }
-    //navigate("/questionnaire");
+    else{
+      navigate('/login')
+      alert("Please enter valid credentials!")
+    }
   }
   return (
     <>
