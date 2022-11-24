@@ -45,11 +45,11 @@ const Login = () => {
 
     console.log("Email: ", email);
     console.log("Password: ", password);
-    //navigate("/questionnaire");
+    navigate("/questionnaire");
 
     const myBody = {email: email, password: password};
     console.log(JSON.stringify(myBody));
-    const response = await fetch('https://techartisans-backend.herokuapp.com/user/login/',{
+    const response = await fetch('http://127.0.0.1:5000/user/login/',{
       method: "POST",
       /*mode: 'no-cors',*/
       headers: {
